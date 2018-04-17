@@ -104,19 +104,19 @@ public class AboutStrings {
 
     @Koan
     public void stringStartsWith() {
-        assertEquals("".startsWith("one"), __);
-        assertEquals("one".startsWith("one"), __);
-        assertEquals("one is the number".startsWith("one"), __);
-        assertEquals("ONE is the number".startsWith("one"), __);
+        assertEquals("".startsWith("one"), false);
+        assertEquals("one".startsWith("one"), true);
+        assertEquals("one is the number".startsWith("one"), true);
+        assertEquals("ONE is the number".startsWith("one"), false);
     }
 
     @Koan
     public void stringEndsWith() {
-        assertEquals("".endsWith("one"), __);
-        assertEquals("one".endsWith("one"), __);
-        assertEquals("the number is one".endsWith("one"), __);
-        assertEquals("the number is two".endsWith("one"), __);
-        assertEquals("the number is One".endsWith("one"), __);
+        assertEquals("".endsWith("one"), false);
+        assertEquals("one".endsWith("one"), true);
+        assertEquals("the number is one".endsWith("one"), true);
+        assertEquals("the number is two".endsWith("one"), false);
+        assertEquals("the number is One".endsWith("one"), false);
     }
 
     @Koan
