@@ -56,24 +56,24 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersCanAlsoBeOfTypeShort() {
-        assertEquals(getType((short) 1), __); // The '(short)' is called an explicit cast - to type 'short'
+        assertEquals(getType((short) 1), short.class); // The '(short)' is called an explicit cast - to type 'short'
     }
 
     @Koan
     public void primitivesOfTypeShortHaveAnObjectTypeShort() {
         Object number = (short) 1;
-        assertEquals(getType(number), __);
+        assertEquals(getType(number), java.lang.Short.class);
     }
 
     @Koan
     public void shortsHaveASmallerRangeThanInts() {
-        assertEquals(Short.MIN_VALUE, __);  // hint: You'll need an explicit cast
-        assertEquals(Short.MAX_VALUE, __);
+        assertEquals(Short.MIN_VALUE, (short)-32768);  // hint: You'll need an explicit cast
+        assertEquals(Short.MAX_VALUE, (short)32767);
     }
 
     @Koan
     public void shortSize() {
-        assertEquals(Short.SIZE, __);
+        assertEquals(Short.SIZE, 16);
     }
 
     @Koan
