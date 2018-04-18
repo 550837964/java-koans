@@ -150,12 +150,12 @@ public class AboutStrings {
 
     @Koan
     public void readableStringFormattingWithStringFormat() {
-        assertEquals(String.format("%s %s %s", "a", "b", "a"), __);
+        assertEquals(String.format("%s %s %s", "a", "b", "a"), "a b a");
     }
 
     @Koan
     public void extraArgumentsToStringFormatGetIgnored() {
-        assertEquals(String.format("%s %s %s", "a", "b", "c", "d"), __);
+        assertEquals(String.format("%s %s %s", "a", "b", "c", "d"), "a b c");
     }
 
     @Koan
@@ -164,8 +164,8 @@ public class AboutStrings {
             String.format("%s %s %s", "a", "b");
             fail("No Exception was thrown!");
         } catch (Exception e) {
-            assertEquals(e.getClass(), __);
-            assertEquals(e.getMessage(), __);
+            assertEquals(e.getClass(), java.util.MissingFormatArgumentException.class);
+            assertEquals(e.getMessage(), "Format specifier '%s'");
         }
     }
 
