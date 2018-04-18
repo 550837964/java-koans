@@ -34,24 +34,24 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersCanAlsoBeOfTypeLong() {
-        assertEquals(getType(1L), __);
+        assertEquals(getType(1L), long.class);
     }
 
     @Koan
     public void primitivesOfTypeLongHaveAnObjectTypeLong() {
         Object number = 1L;
-        assertEquals(getType(number), __);
+        assertEquals(getType(number), java.lang.Long.class);
     }
 
     @Koan
     public void longsHaveALargerRangeThanInts() {
-        assertEquals(Long.MIN_VALUE, __);
-        assertEquals(Long.MAX_VALUE, __);
+        assertEquals(Long.MIN_VALUE, -9223372036854775808L);
+        assertEquals(Long.MAX_VALUE, 9223372036854775807l);
     }
 
     @Koan
     public void longSize() {
-        assertEquals(Long.SIZE, __);
+        assertEquals(Long.SIZE, 64);
     }
 
     @Koan
