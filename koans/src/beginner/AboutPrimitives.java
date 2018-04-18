@@ -78,26 +78,26 @@ public class AboutPrimitives {
 
     @Koan
     public void wholeNumbersCanAlsoBeOfTypeByte() {
-        assertEquals(getType((byte) 1), __);
+        assertEquals(getType((byte) 1), byte.class);
     }
 
     @Koan
     public void primitivesOfTypeByteHaveAnObjectTypeByte() {
         Object number = (byte) 1;
-        assertEquals(getType(number), __);
+        assertEquals(getType(number), java.lang.Byte.class);
     }
 
     @Koan
     public void bytesHaveASmallerRangeThanShorts() {
-        assertEquals(Byte.MIN_VALUE, __);
-        assertEquals(Byte.MAX_VALUE, __);
+        assertEquals(Byte.MIN_VALUE, (byte)(-128));
+        assertEquals(Byte.MAX_VALUE, (byte)127);
 
         // Why would you use short or byte considering that you need to do explicit casts?
     }
 
     @Koan
     public void byteSize() {
-        assertEquals(Byte.SIZE, __);
+        assertEquals(Byte.SIZE, 8);
     }
 
     @Koan
