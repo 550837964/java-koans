@@ -131,36 +131,36 @@ public class AboutPrimitives {
 
     @Koan
     public void decimalNumbersAreOfTypeDouble() {
-        assertEquals(getType(1.0), __);
+        assertEquals(getType(1.0), double.class);
     }
 
     @Koan
     public void primitivesOfTypeDoubleCanBeDeclaredWithoutTheDecimalPoint() {
-        assertEquals(getType(1d), __);
+        assertEquals(getType(1d), double.class);
     }
 
     @Koan
     public void primitivesOfTypeDoubleCanBeDeclaredWithExponents() {
-        assertEquals(getType(1e3), __);
-        assertEquals(1.0e3, __);
-        assertEquals(1E3, __);
+        assertEquals(getType(1e3), double.class);
+        assertEquals(1.0e3, 1000.0);
+        assertEquals(1E3, 1000.0);
     }
 
     @Koan
     public void primitivesOfTypeDoubleHaveAnObjectTypeDouble() {
         Object number = 1.0;
-        assertEquals(getType(number), __);
+        assertEquals(getType(number), java.lang.Double.class);
     }
 
     @Koan
     public void doublesHaveALargeRange() {
-        assertEquals(Double.MIN_VALUE, __);
-        assertEquals(Double.MAX_VALUE, __);
+        assertEquals(Double.MIN_VALUE, 4.9e-324d);
+        assertEquals(Double.MAX_VALUE, 1.7976931348623157E308d);
     }
 
     @Koan
     public void doubleSize() {
-        assertEquals(Double.SIZE, __);
+        assertEquals(Double.SIZE, 64);
     }
 
     @Koan
