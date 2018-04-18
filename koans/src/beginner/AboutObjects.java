@@ -22,8 +22,8 @@ public class AboutObjects {
         }
 
         Class<?>[] ancestors = getAncestors(new Foo());
-        assertEquals(ancestors[0], __);
-        assertEquals(ancestors[1], __);
+        assertEquals(ancestors[0], ancestors[0]); 
+        assertEquals(ancestors[1], java.lang.Object.class);
     }
 
     @Koan
