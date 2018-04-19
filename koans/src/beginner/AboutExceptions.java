@@ -22,7 +22,7 @@ public class AboutExceptions {
         } catch (IOException e) {
             s = "exception thrown";
         }
-        assertEquals(s, __);
+        assertEquals(s, "exception thrown");
     }
 
     @Koan
@@ -36,7 +36,7 @@ public class AboutExceptions {
         } finally {
             s += " and finally ran as well";
         }
-        assertEquals(s, __);
+        assertEquals(s, "exception thrown and finally ran as well");
     }
 
     @Koan
