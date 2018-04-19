@@ -25,7 +25,7 @@ public class AboutDates {
     public void changingDateValue() {
         int oneHourInMiliseconds = 3600000;
         date.setTime(date.getTime() + oneHourInMiliseconds);
-        assertEquals(date.toString(), __);
+        assertEquals(date.toString(), "Sat Mar 03 21:33:21 GMT+08:00 1973");
     }
 
     @Koan
