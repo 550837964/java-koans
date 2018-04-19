@@ -61,10 +61,10 @@ public class AboutCasting {
     public void upcastWithInheritance() {
         Child child = new Child();
         Parent parentReference = child; // Why isn't there an explicit cast?
-        assertEquals(child instanceof Child, __);
-        assertEquals(parentReference instanceof Child, __);
-        assertEquals(parentReference instanceof Parent, __);
-        assertEquals(parentReference instanceof Grandparent, __);
+        assertEquals(child instanceof Child, true);
+        assertEquals(parentReference instanceof Child, true);
+        assertEquals(parentReference instanceof Parent, true);
+        assertEquals(parentReference instanceof Grandparent, true);
     }
 
     @Koan
@@ -72,7 +72,7 @@ public class AboutCasting {
         Child child = new Child();
         Parent parentReference = child;
         // If the result is unexpected, consider the difference between an instance and its reference
-        assertEquals(parentReference.complain(), __);
+        assertEquals(parentReference.complain(), "Are we there yet!!");
     }
 
     @Koan
@@ -80,9 +80,9 @@ public class AboutCasting {
         Grandparent child = new Child();
         Parent parentReference = (Parent) child; // Why do we need an explicit cast here?
         Child childReference = (Child) parentReference; // Or here?
-        assertEquals(childReference instanceof Child, __);
-        assertEquals(childReference instanceof Parent, __);
-        assertEquals(childReference instanceof Grandparent, __);
+        assertEquals(childReference instanceof Child, true);
+        assertEquals(childReference instanceof Parent, true);
+        assertEquals(childReference instanceof Grandparent, true);
     }
 
     @Koan
