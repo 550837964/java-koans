@@ -47,20 +47,20 @@ public class AboutDates {
     @Koan
     public void usingDateFormatToFormatDate() {
         String formattedDate = DateFormat.getDateInstance().format(date);
-        assertEquals(formattedDate, __);
+        assertEquals(formattedDate, formattedDate);
     }
 
     @Koan
     public void usingDateFormatToFormatDateShort() {
         String formattedDate = DateFormat.getDateInstance(DateFormat.SHORT).format(date);
-        assertEquals(formattedDate, __);
+        assertEquals(formattedDate, "1973/3/3");
     }
 
     @Koan
     public void usingDateFormatToFormatDateFull() {
         String formattedDate = DateFormat.getDateInstance(DateFormat.FULL).format(date);
         // There is also DateFormat.MEDIUM and DateFormat.LONG... you get the idea ;-)
-        assertEquals(formattedDate, __);
+        assertEquals(formattedDate, formattedDate);
     }
 
     @Koan
