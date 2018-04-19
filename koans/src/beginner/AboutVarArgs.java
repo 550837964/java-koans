@@ -40,11 +40,11 @@ public class AboutVarArgs {
 
     @Koan
     public void youCanPassInZeroArgumentsIfYouLike() {
-        assertEquals(new ExampleClass().getLength(), __);
+        assertEquals(new ExampleClass().getLength(), 0);
     }
 
     @Koan
     public void youCanHaveOtherTypesInTheMethodSignature() {
-        assertEquals(new ExampleClass().verboseLength("This is how many items were passed in: ", 1, 2, 3, 4), __); 
+        assertEquals(new ExampleClass().verboseLength("This is how many items were passed in: ", 1, 2, 3, 4), "This is how many items were passed in: 4"); 
     }
 }
