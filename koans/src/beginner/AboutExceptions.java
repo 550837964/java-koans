@@ -143,7 +143,7 @@ public class AboutExceptions {
         } catch (IllegalArgumentException ex) {
             s = "caught an IllegalArgumentException";
         }
-        assertEquals(s, __);
+        assertEquals(s, "caught an IllegalArgumentException");
     }
 
     @Koan
@@ -155,7 +155,7 @@ public class AboutExceptions {
         } catch (IllegalArgumentException ex) {
             s = "caught an IllegalArgumentException";
         }
-        assertEquals(s, __);
+        assertEquals(s, 5);
     }
 
     private int validateUsingIllegalArgumentException(String str) {
