@@ -119,7 +119,7 @@ public class AboutEquality {
         Chicken chicken1 = new Chicken();
         chicken1.color = "black";
         Chicken chicken2 = new Chicken();
-        assertEquals(chicken1.equals(chicken2), __);
+        assertEquals(chicken1.equals(chicken2), false);
         assertEquals(chicken1.hashCode() == chicken2.hashCode(), __);
         // Does this still fit the hashCode contract? Why (not)?
         // Fix the Chicken class to correct this.
