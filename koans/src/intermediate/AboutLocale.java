@@ -25,19 +25,19 @@ public class AboutLocale {
         Locale localeJA = new Locale("ja"); // Japan
         DateFormat dateformatJA = DateFormat.getDateInstance(DateFormat.FULL, localeJA);
         // Well if you don't know how to type these characters, try "de", "it" or "us" ;-)
-        assertEquals(dateformatJA.format(date), dateformatJA.format(date));
+        assertEquals(dateformatJA.format(date), "2011年4月3日日曜日");
     }
 
     @Koan
     public void getCountryInformation() {
         Locale locBR = new Locale("pt", "BR");
-        assertEquals(locBR.getDisplayCountry(), locBR.getDisplayCountry());
+        assertEquals(locBR.getDisplayCountry(), "巴西");
         assertEquals(locBR.getDisplayCountry(locBR), "Brasil");
 
         Locale locCH = new Locale("it", "CH");
-        assertEquals(locCH.getDisplayCountry(), __);
-        assertEquals(locCH.getDisplayCountry(locCH), __);
-        assertEquals(locCH.getDisplayCountry(new Locale("de", "CH")), __);
+        assertEquals(locCH.getDisplayCountry(), "瑞士");
+        assertEquals(locCH.getDisplayCountry(locCH), "Svizzera");
+        assertEquals(locCH.getDisplayCountry(new Locale("de", "CH")), "Schweiz");
     }
 
     @Koan
