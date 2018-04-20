@@ -26,13 +26,13 @@ public class AboutJava7LiteralsEnhancements {
         long literal = 111_111_111L;
         //notice capital "B" - a valid binary literal prefix
         short multiplier = 0B1_000;
-        assertEquals(literal * multiplier, __);
+        assertEquals(literal * multiplier, 888_888_888l);
     }
 
     @Koan
     public void negativeBinaryLiteral() {
         int negativeBinaryLiteral = 0b1111_1111_1111_1111_1111_1111_1111_1100 / 4;
-        assertEquals(negativeBinaryLiteral, __);
+        assertEquals(negativeBinaryLiteral, -1);
     }
 
     @Koan
