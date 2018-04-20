@@ -69,21 +69,21 @@ public class AboutLambdas {
         /* final */
         String effectivelyFinal = "I'm effectively final";
         Caps caps = s -> effectivelyFinal.toUpperCase();
-        assertEquals(caps.capitalize(effectivelyFinal), __);
+        assertEquals(caps.capitalize(effectivelyFinal), "I'M EFFECTIVELY FINAL");
     }
 
     @Koan
     public void methodReference() {
         Caps caps = String::toUpperCase;
         String capitalized = caps.capitalize("Gosling");
-        assertEquals(capitalized, __);
+        assertEquals(capitalized, "GOSLING");
     }
 
     @Koan
     public void thisIsSurroundingClass() {
         //"this" in lambda points to surrounding class
         Function<String, String> foo = s -> s + this.fieldFoo + s;
-        assertEquals(foo.apply("|"), __);
+        assertEquals(foo.apply("|"), "|Lambdas|");
     }
 
 }
