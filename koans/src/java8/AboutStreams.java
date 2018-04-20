@@ -116,7 +116,7 @@ public class AboutStreams {
                     str = "hello";
                     return s.startsWith("S");
                 });
-        assertEquals(str, __);
+        assertEquals(str, "");
     }
 
     @Koan
