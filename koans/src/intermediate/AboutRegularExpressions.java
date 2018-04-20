@@ -29,12 +29,12 @@ public class AboutRegularExpressions {
         Pattern p = Pattern.compile("x.z");
         Matcher m = p.matcher("xyz u x z u xfz");
         // index 012345678901234
-        assertEquals(m.find(), __);
-        assertEquals(m.start(), __);
-        assertEquals(m.find(), __);
-        assertEquals(m.start(), __);
-        assertEquals(m.find(), __);
-        assertEquals(m.start(), __);
+        assertEquals(m.find(), true);
+        assertEquals(m.start(), 0);
+        assertEquals(m.find(), true);
+        assertEquals(m.start(), 6);
+        assertEquals(m.find(), true);
+        assertEquals(m.start(), 12);
     }
 
     @Koan
