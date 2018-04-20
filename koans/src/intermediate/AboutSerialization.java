@@ -161,7 +161,7 @@ public class AboutSerialization {
         try {
             is = new ObjectInputStream(new FileInputStream("SerializeFile"));
             Dog otherDog = (Dog) is.readObject();
-            assertEquals(otherDog.name, __);
+            assertEquals(otherDog.name, "snoopy");
         } finally {
             closeStream(is);
         }
