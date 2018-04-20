@@ -129,7 +129,7 @@ public class AboutSerialization {
             marker += "Exception";
         }
         os.close();
-        assertEquals(marker, __);
+        assertEquals(marker, "Start Exception");
     }
 
     @SuppressWarnings("serial")
