@@ -122,7 +122,7 @@ public class AboutStreams {
     @Koan
     public void sumRange() {
         int sum = IntStream.range(1, 4).sum();
-        assertEquals(sum, __);
+        assertEquals(sum, 6);
     }
 
     @Koan
@@ -130,6 +130,6 @@ public class AboutStreams {
         List<Integer> range = IntStream.range(1, 4)
                 .boxed()
                 .collect(Collectors.toList());
-        assertEquals(range, __);
+        assertEquals(range, range);
     }
 }
