@@ -57,7 +57,7 @@ public class AboutStreams {
     public void reduceWithoutStarterReturnsOptional() {
         Optional<String> join = places.stream()
                 .reduce(String::concat);
-        assertEquals(join.get(), __);
+        assertEquals(join.get(), "BelgradeZagrebSarajevoSkopjeLjubljanaPodgorica");
     }
 
     @Koan
@@ -65,7 +65,7 @@ public class AboutStreams {
         String join = places.stream()
                 .reduce((accumulated, cityName) -> accumulated + "\", \"" + cityName)
                 .get();
-        assertEquals(join, __);
+        assertEquals(join, "Belgrade\", \"Zagreb\", \"Sarajevo\", \"Skopje\", \"Ljubljana\", \"Podgorica");
     }
 
     @Koan
