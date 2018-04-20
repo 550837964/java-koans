@@ -35,7 +35,7 @@ public class AboutStreams {
         String longest = places.stream()
                 .max(Comparator.comparing(cityName -> cityName.length()))
                 .get();
-        assertEquals(longest, __);
+        assertEquals(longest, "Ljubljana");
     }
 
     @Koan
@@ -43,7 +43,7 @@ public class AboutStreams {
         String shortest = places.stream()
                 .min(Comparator.comparing(cityName -> cityName.length()))
                 .get();
-        assertEquals(shortest, __);
+        assertEquals(shortest, "Zagreb");
     }
 
     @Koan
