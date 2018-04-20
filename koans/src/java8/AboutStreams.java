@@ -96,7 +96,7 @@ public class AboutStreams {
         int lengthSum = places.parallelStream()
                 .mapToInt(String::length)
                 .sum();
-        assertEquals(lengthSum, __);
+        assertEquals(lengthSum, 46);
     }
 
     @Koan
