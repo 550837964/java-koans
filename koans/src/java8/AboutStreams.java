@@ -106,7 +106,7 @@ public class AboutStreams {
                 .limit(3)
                 .skip(1)
                 .sum();
-        assertEquals(lengthSum_Limit_3_Skip_1, __);
+        assertEquals(lengthSum_Limit_3_Skip_1, 14);
     }
 
     @Koan
