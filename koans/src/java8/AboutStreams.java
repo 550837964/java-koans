@@ -27,7 +27,7 @@ public class AboutStreams {
         long count = places.stream()
                 .filter(s -> s.startsWith("S"))
                 .count();
-        assertEquals(count, __);
+        assertEquals(count, 2l);
     }
 
     @Koan
