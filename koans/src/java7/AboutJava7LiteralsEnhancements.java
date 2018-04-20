@@ -38,7 +38,7 @@ public class AboutJava7LiteralsEnhancements {
     @Koan
     public void binaryLiteralsWithBitwiseOperator() {
         int binaryLiteral = ~0b1111_1111;
-        assertEquals(binaryLiteral, __);
+        assertEquals(binaryLiteral, -256);
     }
 
 }
