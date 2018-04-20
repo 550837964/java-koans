@@ -83,7 +83,7 @@ public class AboutTryWithResources {
         } catch (IOException e) {
             line = "error";
         }
-        assertEquals(line, __);
+        assertEquals(line, "error");
     }
 
     @Koan
