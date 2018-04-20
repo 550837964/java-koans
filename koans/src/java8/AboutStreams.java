@@ -50,7 +50,7 @@ public class AboutStreams {
     public void reduce() {
         String join = places.stream()
                 .reduce("", String::concat);
-        assertEquals(join, __);
+        assertEquals(join, "BelgradeZagrebSarajevoSkopjeLjubljanaPodgorica");
     }
 
     @Koan
