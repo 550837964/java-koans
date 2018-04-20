@@ -72,14 +72,14 @@ public class AboutStreams {
     public void reduceWithBinaryOperator() {
         String join = places.stream()
                 .reduce("", String::concat);
-        assertEquals(join, __);
+        assertEquals(join, "BelgradeZagrebSarajevoSkopjeLjubljanaPodgorica");
     }
 
     @Koan
     public void stringJoin() {
         String join = places.stream()
                 .collect(Collectors.joining("\", \""));
-        assertEquals(join, __);
+        assertEquals(join, "Belgrade\", \"Zagreb\", \"Sarajevo\", \"Skopje\", \"Ljubljana\", \"Podgorica");
     }
 
     @Koan
@@ -88,7 +88,7 @@ public class AboutStreams {
                 .mapToInt(String::length)
                 .average();
         double averageLength = Math.round(averageLengthOptional.getAsDouble());
-        assertEquals(averageLength, __);
+        assertEquals(averageLength, 8.0);
     }
 
     @Koan
