@@ -18,7 +18,7 @@ public class AboutOptional {
         if (value.isPresent()) {
             optionalIsPresent = true;
         }
-        assertEquals(optionalIsPresent, __);
+        assertEquals(optionalIsPresent, false);
     }
 
     @Koan
